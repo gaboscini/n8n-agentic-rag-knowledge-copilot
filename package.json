@@ -1,0 +1,17 @@
+{
+  "name": "n8n-agentic-rag-knowledge-copilot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "B2B SaaS support and incident-resolution agent with governed RAG, tools, approvals, and evaluations.",
+  "scripts": {
+    "build": "node scripts/build-workflow.mjs",
+    "test": "node scripts/validate-project.mjs",
+    "validate": "node scripts/validate-project.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "gaboscini"
+}
+

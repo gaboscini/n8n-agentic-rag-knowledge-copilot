@@ -1,0 +1,23 @@
+name: Validate portfolio artifacts
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm run build
+      - run: npm test
+      - name: Confirm generated workflow is committed
+        run: git diff --exit-code -- workflows/enterprise-agentic-rag-support-control-plane.json

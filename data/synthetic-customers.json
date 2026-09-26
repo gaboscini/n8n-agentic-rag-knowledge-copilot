@@ -1,0 +1,35 @@
+[
+  {
+    "customerKey": "CUS-ACME-001",
+    "name": "Acme Logistics",
+    "plan": "Enterprise",
+    "supportTier": "premium",
+    "region": "APAC",
+    "accountOwner": "Jordan Lee",
+    "contractOverrides": {
+      "sev1InitialResponseMinutes": 20
+    },
+    "enabledFeatures": ["saml_sso", "scim", "audit_export", "priority_support"]
+  },
+  {
+    "customerKey": "CUS-BLUE-002",
+    "name": "Bluebird Retail",
+    "plan": "Business",
+    "supportTier": "priority",
+    "region": "US",
+    "accountOwner": "Morgan Chen",
+    "contractOverrides": {},
+    "enabledFeatures": ["saml_sso", "api_access"]
+  },
+  {
+    "customerKey": "CUS-CEDAR-003",
+    "name": "Cedar Analytics",
+    "plan": "Starter",
+    "supportTier": "standard",
+    "region": "EU",
+    "accountOwner": "Taylor Reed",
+    "contractOverrides": {},
+    "enabledFeatures": ["api_access"]
+  }
+]
+

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise Agentic RAG support architecture</title>
+  <desc id="desc">Knowledge ingestion, agent runtime, tools and approvals, evaluation, and failure recovery connected through n8n, OpenAI, and Supabase.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#151b2f"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".28"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#94a3b8"/></marker>
+    <style>.title{font:700 34px Inter,Segoe UI,sans-serif;fill:#f8fafc}.sub{font:400 17px Inter,Segoe UI,sans-serif;fill:#cbd5e1}.h{font:700 20px Inter,Segoe UI,sans-serif;fill:#f8fafc}.t{font:500 14px Inter,Segoe UI,sans-serif;fill:#dbeafe}.small{font:500 13px Inter,Segoe UI,sans-serif;fill:#cbd5e1}.box{rx:18;filter:url(#shadow);stroke-width:1.5}.line{stroke:#94a3b8;stroke-width:2.5;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1430" cy="90" r="180" fill="#2563eb" opacity=".08"/><circle cx="120" cy="820" r="240" fill="#14b8a6" opacity=".07"/>
+  <text x="70" y="68" class="title">Enterprise Agentic RAG Support &amp; Incident Control Plane</text>
+  <text x="70" y="100" class="sub">A governed B2B SaaS resolution agent with citations, tools, approvals, evaluations, and recovery</text>
+  <rect x="70" y="150" width="330" height="250" class="box" fill="#123056" stroke="#3b82f6"/>
+  <text x="100" y="188" class="h">1. Knowledge ingestion</text><text x="100" y="225" class="t">• Contract and source validation</text><text x="100" y="255" class="t">• Prompt-injection quarantine</text><text x="100" y="285" class="t">• Version and checksum control</text><text x="100" y="315" class="t">• Semantic chunking</text><text x="100" y="345" class="t">• OpenAI embeddings</text><text x="100" y="375" class="t">• Supabase pgvector indexing</text>
+  <rect x="500" y="150" width="420" height="360" class="box" fill="#173126" stroke="#22c55e"/>
+  <text x="530" y="188" class="h">2. Agent runtime</text><text x="530" y="225" class="t">Identity → tenant → role → clearance</text>
+  <rect x="540" y="250" width="340" height="54" rx="12" fill="#214a36"/><text x="566" y="283" class="t">Planner validates bounded tool intent</text>
+  <rect x="540" y="320" width="340" height="54" rx="12" fill="#214a36"/><text x="566" y="353" class="t">Native AI Agent + Supabase RAG tool</text>
+  <rect x="540" y="390" width="340" height="54" rx="12" fill="#214a36"/><text x="566" y="423" class="t">Cited answer + independent evaluator</text>
+  <text x="530" y="480" class="small">Low evidence → abstain and escalate</text>
+  <rect x="1020" y="150" width="500" height="250" class="box" fill="#3a244f" stroke="#a855f7"/>
+  <text x="1050" y="188" class="h">3. Tools and human approval</text><text x="1050" y="225" class="t">Read: entitlement, known errors, similar incidents</text><text x="1050" y="260" class="t">Calculate: SLA deadline and incident owner</text><text x="1050" y="295" class="t">Write: ticket draft or Slack incident escalation</text>
+  <rect x="1050" y="325" width="430" height="46" rx="12" fill="#593773"/><text x="1080" y="354" class="t">External writes execute only after approval</text>
+  <rect x="70" y="550" width="430" height="250" class="box" fill="#3b2d16" stroke="#f59e0b"/>
+  <text x="100" y="588" class="h">4. Evaluation and knowledge operations</text><text x="100" y="625" class="t">• 10 domain-specific golden cases</text><text x="100" y="655" class="t">• Groundedness and citation scoring</text><text x="100" y="685" class="t">• Permission and tool-selection scoring</text><text x="100" y="715" class="t">• Expired/conflicting policy detection</text><text x="100" y="745" class="t">• Slack quality digest</text>
+  <rect x="650" y="590" width="330" height="170" class="box" fill="#153844" stroke="#06b6d4"/>
+  <text x="680" y="628" class="h">Supabase control plane</text><text x="680" y="665" class="t">18 governed tables</text><text x="680" y="695" class="t">pgvector + full-text indexes</text><text x="680" y="725" class="t">RLS, memory, audit, approvals</text>
+  <rect x="1130" y="550" width="390" height="250" class="box" fill="#471f26" stroke="#ef4444"/>
+  <text x="1160" y="588" class="h">5. Failure intake and recovery</text><text x="1160" y="625" class="t">• Bounded error-intake webhook</text><text x="1160" y="655" class="t">• Credential-pattern redaction</text><text x="1160" y="685" class="t">• Supabase dead-letter queue</text><text x="1160" y="715" class="t">• Slack operational incident</text><text x="1160" y="745" class="t">• No automatic external replay</text>
+  <path d="M400 275 H500" class="line"/><path d="M920 275 H1020" class="line"/><path d="M710 510 V590" class="line"/><path d="M500 675 H650" class="line"/><path d="M980 675 H1130" class="line"/>
+  <text x="70" y="860" class="small">Synthetic SaaS support scenario • n8n orchestration • OpenAI structured decisions • Supabase persistence and pgvector</text>
+</svg>

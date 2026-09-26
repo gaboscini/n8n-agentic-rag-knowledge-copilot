@@ -1,0 +1,36 @@
+[
+  {
+    "ticketKey": "INC-2401",
+    "customerKey": "CUS-ACME-001",
+    "title": "SAML assertions rejected after certificate rotation",
+    "description": "All Acme Logistics employees receive SAML signature validation errors after the identity-provider certificate was rotated.",
+    "severity": "SEV-1",
+    "status": "resolved",
+    "ownerTeam": "Platform Authentication",
+    "tags": ["sso", "saml", "certificate"],
+    "resolutionSummary": "The tenant contained the previous signing certificate. Metadata was re-imported, the new fingerprint was verified, and the customer completed a successful sign-in test."
+  },
+  {
+    "ticketKey": "INC-2402",
+    "customerKey": "CUS-BLUE-002",
+    "title": "API requests return 429 during nightly synchronization",
+    "description": "The integration sends 900 requests per minute from one tenant without backoff.",
+    "severity": "SEV-3",
+    "status": "resolved",
+    "ownerTeam": "Developer Support",
+    "tags": ["api", "rate-limit", "429"],
+    "resolutionSummary": "The client implemented Retry-After handling, exponential backoff with jitter, and a maximum of five attempts."
+  },
+  {
+    "ticketKey": "INC-2403",
+    "customerKey": "CUS-ACME-001",
+    "title": "Intermittent SSO clock-skew failure",
+    "description": "A subset of authentication assertions arrive more than five minutes outside the allowed time window.",
+    "severity": "SEV-2",
+    "status": "investigating",
+    "ownerTeam": "Platform Authentication",
+    "tags": ["sso", "clock-skew", "saml"],
+    "resolutionSummary": null
+  }
+]
+

@@ -1,0 +1,25 @@
+{
+  "question": {
+    "tenantKey": "saas-support-demo",
+    "externalUserId": "agent-104",
+    "conversationId": "optional-existing-conversation-uuid",
+    "customerKey": "CUS-ACME-001",
+    "question": "All Acme users receive a SAML signature error after certificate rotation. What should we do and what SLA applies?",
+    "requestedAction": "prepare_incident_escalation"
+  },
+  "approval": {
+    "tenantKey": "saas-support-demo",
+    "approvalId": "approval-uuid",
+    "approverExternalId": "incident-manager-22",
+    "decision": "approved",
+    "reason": "Evidence and severity confirmed"
+  },
+  "feedback": {
+    "tenantKey": "saas-support-demo",
+    "conversationId": "conversation-uuid",
+    "messageId": "assistant-message-uuid",
+    "rating": 5,
+    "reasonCode": "resolved_issue",
+    "comment": "The cited runbook and similar incident were correct."
+  }
+}
